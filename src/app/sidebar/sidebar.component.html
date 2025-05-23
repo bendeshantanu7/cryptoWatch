@@ -1,0 +1,10 @@
+<aside class="watchlist-sidebar">
+    <h3>🔖 Watchlist</h3>
+    <ul>
+      <li *ngFor="let coin of watchList$ | async">
+        {{ coin.symbol }} - {{ coin.current_price | currency:'USD' }}
+        <button (click)="removeFromWatchlist(coin)">❌</button>
+      </li>
+    </ul>
+</aside>
+  

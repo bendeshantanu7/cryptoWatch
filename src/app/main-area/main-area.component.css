@@ -1,0 +1,107 @@
+.crypto-main {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 2rem;
+    overflow-y: auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+  }
+  
+  .crypto-main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  
+  .search-container {
+    margin-bottom: 1rem;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .search-container input:focus {
+    border-color: #6366f1;
+  }
+  
+  .refresh-timer {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  .crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .crypto-table th,
+  .crypto-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .crypto-table th {
+    background-color: #f1f5f9;
+    color: #374151;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+  
+  .crypto-table tbody tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  .up {
+    color: #22c55e; /* green-500 */
+    font-weight: 600;
+  }
+  
+  .down {
+    color: #ef4444; /* red-500 */
+    font-weight: 600;
+  }
+  
+  .crypto-table button {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #facc15; /* yellow-400 */
+    transition: transform 0.2s;
+  }
+  
+  .crypto-table button:hover {
+    transform: scale(1.2);
+  }
+
+  .star-filled {
+    color: gold;
+    font-size: 20px;
+  }
+  
+  .star-outline {
+    color: lightgray;
+    font-size: 20px;
+  }
+  
+  .last-updated {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+  

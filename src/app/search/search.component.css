@@ -1,0 +1,26 @@
+.search-wrapper {
+    width: 100%;
+  }
+  
+  .search-wrapper input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 8px;
+    outline: none;
+    background-color: #ffffff;
+    color: #1f2937; /* gray-800 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .search-wrapper input::placeholder {
+    color: #9ca3af; /* gray-400 */
+  }
+  
+  .search-wrapper input:focus {
+    border-color: #6366f1; /* indigo-500 */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  }
+  

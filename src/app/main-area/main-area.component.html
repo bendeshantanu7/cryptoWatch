@@ -1,0 +1,32 @@
+<main class="crypto-main">
+    <h2>📊 Live Crypto Prices</h2>
+  
+    <table class="crypto-table">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>24h Change</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coin of filteredCoins$ | async">
+          <td>{{ coin.symbol }}</td>
+          <td>{{ coin.name }}</td>
+          <td>{{ coin.current_price | currency:'USD' }}</td>
+          <td [ngClass]="{ 'up': coin.price_change_percentage_24h >= 0, 'down': coin.price_change_percentage_24h < 0 }">
+            {{ coin.price_change_percentage_24h }}%
+          </td>
+          <td>
+            <button (click)="addToWatchlist(coin)">
+              
+              <span *ngIf="isInWatchlist(coin)">⭐ </span>
+              <span *ngIf="!isInWatchlist(coin)">☆ </span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
